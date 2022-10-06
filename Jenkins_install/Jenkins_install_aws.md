@@ -29,5 +29,9 @@ sudo systemctl start jenkins
 ```
 sudo systemctl status jenkins
 ```
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
 
 
