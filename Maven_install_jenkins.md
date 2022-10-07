@@ -34,6 +34,9 @@ cd apache-maven-3.8.6
 ```
 pwd
 ```
+```
+/usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1
+```
 
 
 
