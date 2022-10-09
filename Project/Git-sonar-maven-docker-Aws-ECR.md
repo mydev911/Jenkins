@@ -21,6 +21,43 @@ https://github.com/mydev911/Jenkins/blob/main/Maven_install_jenkins.md
 ### Docker install
 https://github.com/mydev911/Docker_example/blob/main/Install_docker/install_docker_1.md
 
+### we need to give docker permission
+```
+su ec2-user
+```
+```
+sudo chmod 777 /var/run/docker.sock
+```
+
+##### On jenkins web
+Global Tool Configuration > Maven > Add Maven > 
+Name > apache-maven-3.8.6
+MAVEN_HOME
+/opt/apache-maven-3.8.6
+### sonar-scaner plugin install
+
+
+## ON sonarqube server
+
+### Sonarqube install
+https://github.com/mydev911/SonarQube/blob/main/Sonarqube/Setup_SonaQube_Aws.md
+
+##### Install docker
+https://github.com/mydev911/Docker_example/blob/main/Install_docker/install_docker_1.md
+
+### we need to give docker permission ( we can not run sonaqube on root user)
+```
+su ec2-user
+```
+```
+sudo chmod 777 /var/run/docker.sock
+```
+
+### webhook on sonarqube
+jenkins_IP/sonarqube-webhook/
+
+
+
 
 
 
