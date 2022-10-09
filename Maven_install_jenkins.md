@@ -1,42 +1,41 @@
 ## Install maven on jenkins
 https://www.fosstechnix.com/how-to-install-maven-on-ubuntu/
 
-```
-ls
-```
+https://maven.apache.org/download.cgi
+Root > opt
 ```
 cd /opt
-```
-```
-mkdir maven
-```
-```
-ls
-```
-```
-cd maven
 ```
 ```
 wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 ```
 ```
-tar -xf apache-maven-3.8.6-bin.tar.gz
-```
-```
-mvn -version
-```
-```
 ls
 ```
 ```
-cd apache-maven-3.8.6
+tar -xvf apache-maven-3.8.6-bin.tar.gz
 ```
+Remove tar file
 ```
-pwd
+rm -rf apache-maven-3.8.6-bin.tar.gz
 ```
-```
-/usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1
-```
+### Now setup the path for maven
 
-
-
+##### Temporily setup for maven path
+```
+export PATH=$PATH:/opt/apache-maven-3.8.6/bin
+```
+```
+mvn --version
+```
+##### Permanant setup for maven path
+```
+vi ~/.bashrc
+```
+Paste this command
+```
+export PATH=$PATH:/opt/apache-maven-3.8.6/bin
+```
+```
+source ~/.bashrc
+```
